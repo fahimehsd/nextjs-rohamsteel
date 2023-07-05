@@ -19,7 +19,7 @@ const News = () => {
   }, []);
 
   return (
-    <div className="p-2">
+    <div className="p-2 m-2 bg-white shadow-md">
       <p className="font-bold text-xl text-red-500 p-3 border-b border-red-500 mb-4">
         آخرین اخبار
       </p>

@@ -35,7 +35,7 @@ const Tags = () => {
   const merged = words.flat(1);
 
   return (
-    <div className="bg-white my-10 border shadow-md flex flex-col">
+    <div className="bg-white w-full my-5 border shadow-md ">
       <p className="text-red-600 font-bold p-2 border-b mb-2">برچسب های خبری</p>
       <div className="flexStart flex-wrap gap-2 p-2">
         {merged.map((item) => (

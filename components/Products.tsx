@@ -20,7 +20,7 @@ const Products = () => {
   }, []);
 
   return (
-    <div className="p-2 ">
+    <div className="p-2 m-2 bg-white shadow-md">
       <p className="font-bold text-xl">جدیدترین محصولات</p>
       <div className="mt-5 flex flex-col gap-5">
         {products.slice(-3).map((item) => (
