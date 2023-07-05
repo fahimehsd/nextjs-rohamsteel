@@ -28,7 +28,7 @@ const Header = () => {
   window.addEventListener("scroll", changeHeader);
 
   return header ? (
-    <header className="bg-slate-50 fixed p-2 duration-300">
+    <header className="bg-slate-50 fixed p-2 duration-300 z-10">
       <div className="flexBetween gap-2">
         <Image
           src={"/logo.png"}
