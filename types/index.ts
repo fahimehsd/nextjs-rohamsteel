@@ -17,3 +17,16 @@ export interface MoreState {
   desc: string;
   image?: string;
 }
+
+export interface PaginationProps {
+  postsPerPage: number;
+  totalPosts: number;
+  paginateFront: () => void;
+  paginateBack: () => void;
+  currentPage: number;
+  paginate: (number: any) => void;
+}
+
+export interface ProductsCardProps {
+  data: ProductsState[];
+}
