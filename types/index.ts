@@ -3,6 +3,7 @@ export interface NewsState {
   title: string;
   desc: string;
   image?: string;
+  createdAt?: string;
 }
 export interface ProductsState {
   id: number;
@@ -29,4 +30,7 @@ export interface PaginationProps {
 
 export interface ProductsCardProps {
   data: ProductsState[];
+}
+export interface NewsCardProps {
+  data: NewsState[];
 }

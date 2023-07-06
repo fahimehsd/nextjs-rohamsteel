@@ -24,7 +24,7 @@ const Products = () => {
     <div className="p-2 m-2 bg-white shadow-md">
       <p className="font-bold text-xl">جدیدترین محصولات</p>
       <div className="mt-5 flex flex-col gap-5">
-        <ProductsCard data={products} />
+        <ProductsCard data={products.slice(-3)} />
         <button
           onClick={() => router.push("/products")}
           className="bg-red-500 p-2 text-white font-bold rounded-md"
