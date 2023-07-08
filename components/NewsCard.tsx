@@ -4,13 +4,14 @@ import React from "react";
 
 const NewsCard = ({ data }: NewsCardProps) => {
   return (
-    <div className="flexCenter flex-col gap-4">
+    <div className="flexCenter flex-col gap-4 ">
       {data.map((news) => (
-        <div className="shadow-md flex flex-col p-3 hover:shadow-red-500 duration-300">
+        <div className="shadow-md flexStart flex-col p-3 hover:shadow-red-500 duration-300 w-full h-full">
           <Link href={`/newsDetails/${news.id}`} key={news.id}>
-            <p className="font-bold mb-3 text-red-600">{news.title}</p>
-            <p>{news?.createdAt}</p>
-
+            <div className="flexBetween">
+              <p className="font-bold mb-3 text-red-600">{news.title}</p>
+              <p>{news?.createdAt}</p>
+            </div>
             <div className="flex items-start gap-3">
               <img
                 src={news.image}

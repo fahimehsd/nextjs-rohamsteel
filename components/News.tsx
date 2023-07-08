@@ -20,12 +20,13 @@ const News = () => {
   }, []);
 
   return (
-    <div className="p-2 m-2 bg-white shadow-md">
+    <div className="p-2 m-2 bg-white shadow-md w-full">
       <p className="font-bold text-xl text-red-500 p-3 border-b border-red-500 mb-4">
         آخرین اخبار
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-5">
         <NewsCard data={news.slice(-6)} />
+
         <button
           onClick={() => router.push("/news")}
           className="bg-red-500 p-2 text-white font-bold rounded-md"
