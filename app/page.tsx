@@ -12,7 +12,7 @@ import Tags from "@/components/Tags";
 const Home = () => {
   return (
     <div className="bg-gray-100 flexCenter md:items-start md:px-80 md:pt-5 md:gap-5">
-      <main className="flexCenter flex-col w-full md:w-2/3">
+      <main className="flexCenter flex-col w-full md:w-2/3 md:gap-5">
         <Tags />
         <Hero />
         <About />

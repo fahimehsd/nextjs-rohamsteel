@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="p-2 md:min-h-screen my-10">
+    <div className="p-5 m-2 bg-white shadow-md w-full">
       <p className="font-bold text-xl text-red-500">درباره رهام پارس</p>
       <p className=" first-letter:pr-4 mt-3">
         هدف شرکت صنایع فولاد رهام پارس، تولید سالانه ۲/۱ میلیون تن آهن اسفنجی با
