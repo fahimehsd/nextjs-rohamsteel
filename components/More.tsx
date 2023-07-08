@@ -20,13 +20,14 @@ const More = () => {
   return (
     <div className="p-2">
       <p className="font-bold text-xl">مطالب بیشتر</p>
-      <div className="flexCenter flex-col">
+      <div className="flexCenter flex-col ">
         {more.slice(-3).map((more) => (
           <Disclosure key={more.id}>
             {({ open }) => (
               <div className="p-5">
                 <img src={more.image} alt={more.title} />
                 <p className="mt-2 text-center">{more.title}</p>
+
                 <Disclosure.Button className="flex justify-center items-center w-full bg-transparent px-4 py-2 text-sm font-medium text-gray-900 hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-red-500 focus-visible:ring-opacity-75 border-b border-red-500">
                   <p className="text-red-500">بیشتر بخوانید</p>
                   <MdKeyboardArrowDown
@@ -35,6 +36,7 @@ const More = () => {
                     } h-5 w-5 text-red-500`}
                   />
                 </Disclosure.Button>
+
                 <Disclosure.Panel
                   className="flex flex-col 
                 gap-2 px-4 py-4 text-sm text-gray-500"
