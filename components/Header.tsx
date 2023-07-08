@@ -28,7 +28,7 @@ const Header = () => {
   window.addEventListener("scroll", changeHeader);
 
   return header ? (
-    <header className="px-80 bg-gray-50 fixed p-2 duration-300 z-10 w-full">
+    <header className="md:px-80 bg-gray-50 fixed p-2 duration-300 z-10 w-full">
       <div className="flexBetween gap-2">
         <Image
           src={"/logo.png"}
@@ -75,7 +75,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-3 md:px-80 md:py-2">
+      <div className="flex flex-col gap-3 px-2 md:px-80 md:py-2">
         <div className="flexBetween gap-2">
           <Image
             src={"/logo.png"}
