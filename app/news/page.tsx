@@ -40,7 +40,7 @@ const News = () => {
           <Tags />
         </div>
         <div className="flexBetween w-full p-2 mb-4">
-          <p className="font-bold text-xl">
+          <p className="text-xl md:text-4xl font-bold py-2">
             اخبار شرکت <span className="text-red-500">رهام</span> پارس
           </p>
           <p>{date}</p>
