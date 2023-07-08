@@ -42,7 +42,7 @@ const Products = () => {
           <Tags />
         </div>
         <div className="flexBetween w-full p-2 mb-4">
-          <p className="font-bold text-xl">
+          <p className="font-bold text-xl md:text-4xl">
             محصولات شرکت <span className="text-red-500">رهام</span> پارس
           </p>
           <p>{date}</p>
