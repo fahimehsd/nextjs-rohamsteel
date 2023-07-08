@@ -28,7 +28,7 @@ const Header = () => {
   window.addEventListener("scroll", changeHeader);
 
   return header ? (
-    <header className="bg-slate-50 fixed p-2 duration-300 z-10">
+    <header className="px-80 bg-slate-50 fixed p-2 duration-300 z-10 w-full">
       <div className="flexBetween gap-2">
         <Image
           src={"/logo.png"}
@@ -54,9 +54,7 @@ const Header = () => {
     </header>
   ) : (
     <header className="flex flex-col gap-3 duration-300">
-      <div
-        className={`flexCenter bg-red-500 md:justify-between md:text-lg md:p-3 `}
-      >
+      <div className="flexCenter bg-red-500 md:justify-between md:text-lg md:px-80 md:py-2">
         <p className="hidden md:block">شرکت صنایع فولاد رهام پارس</p>
         <div>
           <ul className="flexCenter flex-col gap-1 md:flex-row md:gap-5 ">
@@ -77,13 +75,13 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col gap-3 px-2">
+      <div className="flex flex-col gap-3 md:px-80 md:py-2">
         <div className="flexBetween gap-2">
           <Image
             src={"/logo.png"}
             width={220}
             height={200}
-            className="w-44"
+            className="md:w-44"
             alt="شرکت صنایع فولادی رهام پارس"
           />
           <div>
@@ -107,12 +105,13 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <div className="p-2">
-        <ul className="flex flex-wrap gap-3 text-sm">
+      <div className="p-2 md:p-0 ">
+        <hr className="border-gray-300 hidden md:block" />
+        <ul className="flex flex-wrap gap-3 text-sm md:px-80  md:pt-3">
           {HeaderLinks.map((link) => (
             <li
               key={link.id}
-              className="border-b p-1 hover:border-red-500 focus:border-red-500"
+              className="border-b p-2 border-gray-300 hover:border-red-500 focus:border-red-500"
             >
               <Link href={link.path}>{link.title}</Link>
             </li>
