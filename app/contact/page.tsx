@@ -8,7 +8,7 @@ const Contact = () => {
   const onSubmit = (data: any) => console.log(data);
   return (
     <div className="bg-gray-100 flexCenter md:items-start md:px-80 md:pt-5 md:gap-5 p-2">
-      <main>
+      <main className="w-full">
         <p className="text-2xl sm:text-4xl font-bold mb-4">
           با <span className="text-red-500"> رهام </span> پارس در تماس باشید
         </p>
