@@ -17,9 +17,10 @@ const Home = () => {
         <Hero />
         <About />
         <News />
-        <div className="w-full h-10 my-10 bg-gray-200"></div>
+        <div className="w-full h-10 bg-gray-200"></div>
+
         <Products />
-        <div className="w-full h-10 my-10 bg-gray-200"></div>
+        <div className="w-full h-10  bg-gray-200"></div>
         <More />
       </main>
       <aside className="hidden md:flex md:flex-col md:gap-3 md:w-1/3">
