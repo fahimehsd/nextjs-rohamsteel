@@ -27,7 +27,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-slate-200 w-full h-full">
+    <footer className="bg-gray-200 w-full h-full md:px-80">
       {FooterLinks.map((item) => (
         <Disclosure key={item.id}>
           {({ open }) => (

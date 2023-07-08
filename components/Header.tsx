@@ -28,7 +28,7 @@ const Header = () => {
   window.addEventListener("scroll", changeHeader);
 
   return header ? (
-    <header className="px-80 bg-slate-50 fixed p-2 duration-300 z-10 w-full">
+    <header className="px-80 bg-gray-50 fixed p-2 duration-300 z-10 w-full">
       <div className="flexBetween gap-2">
         <Image
           src={"/logo.png"}
@@ -38,7 +38,7 @@ const Header = () => {
           alt="شرکت صنایع فولادی رهام پارس"
         />
         <div>
-          <div className="flex gap-2 items-center bg-slate-200 rounded-md p-1">
+          <div className="flex gap-2 items-center bg-gray-200 rounded-md p-1">
             <AiOutlineSearch size={25} className="text-red-500" />
             <input
               type="text"
@@ -46,7 +46,7 @@ const Header = () => {
               onChange={(e) => setSearched(e.target.value)}
               onKeyUp={(e) => searchHandler(e)}
               placeholder="جست و جو کنید.."
-              className="w-full bg-slate-200 rounded-md outline-none text-sm"
+              className="w-full bg-gray-200 rounded-md outline-none text-sm"
             />
           </div>
         </div>
@@ -85,7 +85,7 @@ const Header = () => {
             alt="شرکت صنایع فولادی رهام پارس"
           />
           <div>
-            <div className="flex gap-2 items-center bg-slate-200 rounded-md p-1">
+            <div className="flex gap-2 items-center bg-gray-200 rounded-md p-1">
               <AiOutlineSearch size={25} className="text-red-500" />
               <input
                 type="text"
@@ -93,13 +93,13 @@ const Header = () => {
                 onChange={(e) => setSearched(e.target.value)}
                 onKeyUp={(e) => searchHandler(e)}
                 placeholder="جست و جو کنید.."
-                className="w-full bg-slate-200 rounded-md outline-none text-sm"
+                className="w-full bg-gray-200 rounded-md outline-none text-sm"
               />
             </div>
           </div>
         </div>
         <div>
-          <p className="text-xs text-slate-500">
+          <p className="text-xs text-gray-500">
             هدف شرکت صنایع فولاد رهام پارس، تولید سالانه ۲/۱ میلیون تن آهن
             اسفنجی با تأکید بر حفاظت از محیط زیست است.
           </p>

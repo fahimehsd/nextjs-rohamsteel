@@ -9,17 +9,17 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-slate-100 flexCenter flex-col">
-      <aside className="w-full">
+    <div className="bg-gray-100 flexCenter flex-col md:px-80">
+      <div className="w-full">
         <Tags />
-      </aside>
+      </div>
       <main>
         <Hero />
         <About />
         <News />
-        <div className="w-full h-10 my-10 bg-slate-200"></div>
+        <div className="w-full h-10 my-10 bg-gray-200"></div>
         <Products />
-        <div className="w-full h-10 my-10 bg-slate-200"></div>
+        <div className="w-full h-10 my-10 bg-gray-200"></div>
         <More />
       </main>
     </div>

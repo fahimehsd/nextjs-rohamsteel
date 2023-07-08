@@ -7,7 +7,7 @@ const Contact = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data: any) => console.log(data);
   return (
-    <div className="bg-slate-100 flexCenter flex-col py-4">
+    <div className="bg-gray-100 flexCenter flex-col py-4">
       <p className="text-2xl sm:text-4xl font-bold mb-4">
         با <span className="text-red-500"> رهام </span> پارس در تماس باشید
       </p>

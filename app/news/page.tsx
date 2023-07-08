@@ -31,7 +31,7 @@ const News = () => {
 
   const date = new Date().toLocaleDateString("fa-IR");
   return (
-    <div className="bg-slate-100 flexCenter flex-col py-4">
+    <div className="bg-gray-100 flexCenter flex-col py-4">
       <div className="w-full mx-2">
         <Tags />
       </div>
