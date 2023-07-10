@@ -1,14 +1,13 @@
 "use client";
 import { BASE_URL } from "@/app/api";
-import { MoreState, NewsState, ProductsState } from "@/types";
+import { NewsState } from "@/types";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import React, { useState, useEffect } from "react";
 
 const Tags = () => {
   const [news, setNews] = useState<NewsState[]>([]);
-  const [products, setProducts] = useState<ProductsState[]>([]);
-  const [more, setMore] = useState<MoreState[]>([]);
-
+  const router = useRouter();
   const getData = () => {
     axios.get(BASE_URL).then((res) => setNews(res.data.news));
   };
@@ -39,7 +38,10 @@ const Tags = () => {
       <p className="text-red-600 font-bold p-3 border-b mb-2">برچسب های خبری</p>
       <div className="flexStart flex-wrap gap-2 p-2">
         {merged.map((item) => (
-          <div className="bg-gray-100 p-1 rounded-md border border-gray-300 text-gray-500 font-bold text-sm">
+          <div
+            onClick={() => router.push("/search", { query: { search: item } })}
+            className="bg-gray-100 p-1 rounded-md border border-gray-300 text-gray-500 font-bold text-sm"
+          >
             <p>{item}</p>
           </div>
         ))}
