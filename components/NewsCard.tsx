@@ -4,7 +4,7 @@ import React from "react";
 
 const NewsCard = ({ data }: NewsCardProps) => {
   return (
-    <div className="flexCenter flex-col gap-4 ">
+    <div className="flexStart flex-col gap-4 ">
       {data.map((news) => (
         <div className="shadow-md flexStart flex-col p-3 hover:shadow-red-500 duration-300 w-full h-full">
           <Link href={`/newsDetails/${news.slug}`} key={news.id}>
