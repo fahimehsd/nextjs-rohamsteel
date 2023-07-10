@@ -23,7 +23,7 @@ const NewsAside = () => {
       <div className="px-2 py-4 flex flex-col gap-3">
         {news.slice(-10).map((news) => (
           <Link
-            href={`/newsDetails/${news.id}`}
+            href={`/newsDetails/${news.slug}`}
             className="flex gap-2 hover:text-red-600 duration-300"
           >
             <div className="pt-2">

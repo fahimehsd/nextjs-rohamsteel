@@ -7,7 +7,7 @@ const NewsCard = ({ data }: NewsCardProps) => {
     <div className="flexCenter flex-col gap-4 ">
       {data.map((news) => (
         <div className="shadow-md flexStart flex-col p-3 hover:shadow-red-500 duration-300 w-full h-full">
-          <Link href={`/newsDetails/${news.id}`} key={news.id}>
+          <Link href={`/newsDetails/${news.slug}`} key={news.id}>
             <div className="flexBetween">
               <p className="font-bold mb-3 text-red-600">{news.title}</p>
               <p>{news?.createdAt}</p>

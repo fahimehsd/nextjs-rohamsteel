@@ -4,6 +4,7 @@ export interface NewsState {
   desc: string;
   image?: string;
   createdAt?: string;
+  slug: string;
 }
 export interface ProductsState {
   id: number;
@@ -11,6 +12,7 @@ export interface ProductsState {
   desc: string;
   image?: string;
   price: number;
+  slug: string;
 }
 export interface MoreState {
   id: number;
