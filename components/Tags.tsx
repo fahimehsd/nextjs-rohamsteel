@@ -3,7 +3,7 @@ import { BASE_URL } from "@/app/api";
 import { NewsState } from "@/types";
 import axios from "axios";
 import { useRouter } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 const Tags = () => {
   const [news, setNews] = useState<NewsState[]>([]);
@@ -14,6 +14,13 @@ const Tags = () => {
 
   useEffect(() => {
     getData();
+  }, []);
+
+  const createQueryString = useCallback((name: string, value: string) => {
+    const params = new URLSearchParams();
+    params.set(name, value);
+
+    return params.toString();
   }, []);
 
   const titles = news
@@ -39,7 +46,9 @@ const Tags = () => {
       <div className="flexStart flex-wrap gap-2 p-2">
         {merged.map((item) => (
           <div
-            onClick={() => router.push("/search", { query: { search: item } })}
+            onClick={() =>
+              router.push("/search" + "?" + createQueryString("searched", item))
+            }
             className="bg-gray-100 p-1 rounded-md border border-gray-300 text-gray-500 font-bold text-sm"
           >
             <p>{item}</p>

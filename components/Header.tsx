@@ -3,16 +3,21 @@ import { HeaderLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { AiTwotonePhone, AiOutlineMail, AiOutlineSearch } from "react-icons/ai";
 
 const Header = () => {
   const router = useRouter();
   const [searched, setSearched] = useState("");
+  const createQueryString = useCallback((name: string, value: string) => {
+    const params = new URLSearchParams();
+    params.set(name, value);
 
+    return params.toString();
+  }, []);
   const searchHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.code === "Enter") {
-      router.push("/search", { query: { search: searched } });
+      router.push("/search" + "?" + createQueryString("searched", searched));
     }
   };
 
