@@ -40,7 +40,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="rounded-sm flex flex-col items-center p-3 my-10 sm:p-10 bg-black-100 shadow-lg">
+          <div className="rounded-sm flex flex-col items-center p-3 my-10 sm:p-10 bg-black-100 shadow-lg shadow-red-500">
             <p>فرم درخواست همکاری</p>
 
             <form onSubmit={handleSubmit(onSubmit)}>
