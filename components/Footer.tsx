@@ -107,7 +107,7 @@ const Footer = () => {
                   </div>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className="flex flex-col gap-4 px-4 pt-4 pb-2 text-sm text-gray-500">
+                <Disclosure.Panel className="flex items-start flex-col gap-4 px-4 pt-4 pb-2 text-sm text-gray-500">
                   {news.slice(-2).map((news) => (
                     <Link key={news.id} href={`/news/${news.id}`}>
                       <div
