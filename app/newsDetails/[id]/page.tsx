@@ -22,7 +22,7 @@ const News = () => {
     getNews();
   }, []);
 
-  const theNews = news.find((news) => id == news.id);
+  const theNews = news.find((news) => +id == news.id);
 
   const date = new Date().toLocaleDateString("fa-IR");
   return (
