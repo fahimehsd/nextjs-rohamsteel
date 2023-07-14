@@ -30,7 +30,8 @@ const Header = () => {
     }
   };
 
-  window.addEventListener("scroll", changeHeader);
+  const body = document.getElementById("root");
+  body?.addEventListener("scroll", changeHeader);
 
   return header ? (
     <header className="md:px-80 bg-gray-50 fixed p-2 duration-300 z-10 w-full">
